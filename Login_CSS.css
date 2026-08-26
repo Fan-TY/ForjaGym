@@ -1,0 +1,12 @@
+.contenido {
+    display: none;
+}
+
+#iniciar_sesion:checked ~ #contenido1 {
+    display: block;
+}
+
+#crear_sesion:checked ~ #contenido2{
+    display: block;
+}
+
