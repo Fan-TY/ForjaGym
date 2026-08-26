@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="finalizarcompraCSS.css">
+    <title>Forjagym - Finalizar compra</title>
+</head>
+<body>
+   <header>
+        <div class="logo">
+            <span class="icono"></span>
+            <span>forjagym</span>
+        </div>
+        <div class="titulo-header">
+            <span>finalizar compra</span>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        
+        <!-- lado izquierdo -->
+        <div class="columna-izquierda">
+            
+            <p class="titulo-seccion">plan seleccionado</p>
+            <div class="caja-plan">
+                <div class="info">
+                    <h2>fuerza total — mensual</h2>
+                    <p>incluye acceso a coach y zona de recuperación</p>
+                </div>
+                <div class="precio">
+                    <span class="moneda">S/</span>
+                    <span class="monto">180</span>
+                </div>
+            </div>
+
+            <p class="titulo-seccion">medio de pago</p>
+            <div class="opciones-pago">
+                <input type="radio" name="metodo_pago" id="pago-tarjeta" class="radio-oculto" checked>
+                <label for="pago-tarjeta" class="btn-pago">
+                    <span class="checkbox"></span>
+                    <span>Tarjeta de débito / crédito</span>
+                </label>
+
+                <input type="radio" name="metodo_pago" id="pago-billetera" class="radio-oculto">
+                <label for="pago-billetera" class="btn-pago">
+                    <span class="checkbox"></span>
+                    <span>Billetera digital (Yape / Plin)</span>
+                </label>
+
+                <input type="radio" name="metodo_pago" id="pago-transferencia" class="radio-oculto">
+                <label for="pago-transferencia" class="btn-pago">
+                    <span class="checkbox"></span>
+                    <span>Transferencia bancaria</span>
+                </label>
+              <!--  <button class="btn-pago activo">
+                    <span class="checkbox"></span>
+                    <span>tarjeta</span>
+                </button>
+                <button class="btn-pago">
+                    <span class="checkbox"></span>
+                    <span>billetera digital</span>
+                </button>
+                <button class="btn-pago">
+                    <span class="checkbox"></span>
+                    <span>transferencia</span>
+                </button> -->
+            </div>
+
+            <div class="caja-recurrente">
+                <div class="info">
+                    <h2>pago recurrente</h2>
+                    <p>renovación automática cada mes</p>
+                </div>
+                 <!-- <div class="switch">
+                    <div class="boton-switch"></div>
+                </div>-->
+                <input type="checkbox" id="switch-recurrente" class="checkbox-oculto" checked>
+                <label for="switch-recurrente" class="switch">
+                    <span class="boton-switch"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <!-- lado derecho -->
+        <div class="columna-derecha">
+            <div class="caja-factura">
+                <h2>Resumen de pago</h2>
+                
+                <div class="item-factura">
+                    <span>plan fuerza total</span>
+                    <span>S/ 180.00</span>
+                </div>
+                <div class="item-factura">
+                    <span>IGV</span>
+                    <span>S/ 32.40</span>
+                </div>
+
+                <div class="total-factura">
+                    <span>total</span>
+                    <span class="precio-final">S/ 212.40</span>
+                </div>
+
+                <button class="btn-confirmar"> y  pago</button>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
