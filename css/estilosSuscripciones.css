@@ -81,3 +81,9 @@
 .duracion{
     color: #919191;
 }
+.gym-footer{
+    border-top: 1px solid rgba(39, 39, 39, 0.253);
+    text-align: center;
+    padding: 20px;
+    color: #7c8f89;
+}
