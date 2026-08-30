@@ -105,6 +105,10 @@
     font-size: 60px;
 }
 
+#cont{
+    position: relative;
+    z-index: 3;
+}
 
 /*DESPLEGABLE*/
 summary{
