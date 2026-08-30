@@ -87,51 +87,37 @@
                     <p class="mb-0">Centro de ayuda</p>
                 </div>
 
-                <p class="fw-bold lh-1" style="color: white; font-size: 60px;" >LA GESTION</p>
-                <p id="texto-degradado" class="fw-bold lh-1">EMPIEZA CON RESPUESTAS</p>
-                <p style="color: rgb(227, 218, 218); font-size: 25px;" >resuelva sus dudas sobre pagos, reembolsos y membresias</p>
+                <p class="fw-bold lh-1" style="color: white; font-size: 60px;" >HABLEMOS CON</p>
+                <p id="texto-degradado" class="fw-bold lh-1">NUESTRO EQUIPO</p>
+                <p style="color: rgb(227, 218, 218); font-size: 25px;" >envianos tu consulta y te responderemos en brevedad</p>
             </div>
 
-            <div >
-                <details class="detalle-impar">
-                    <summary>¿Qué métodos de pago aceptan?</summary>
-                    <p style="color: white; font-size: 17px;">
-                        Aceptamos tarjetas de crédito y débito (Visa, Mastercard), transferencias bancarias y pagos en efectivo en nuestra sede principal.
-                    </p>
-                </details>
+            <div id="formulario-consulta" class="container pb-4 ">
+                <form action="" class="row">
 
-                <details class="detalle-par">
-                    <summary>¿Emiten boleta o factura?</summary>
-                    <p style="color: white; font-size: 17px;">
-                        Sí, generamos boleta electrónica automáticamente. Si necesitas factura, puedes solicitarla proporcionando tu RUC al momento del pago o escribiendo a nuestro correo de soporte.
-                    </p>
-                </details>
+                    <div class="col-12 text-white ">
+                        <label for="">NOMBRE</label>
+                        <input type="text" placeholder="tu nombre" class="me-5">
 
-                <details class="detalle-impar">
-                    <summary>¿Qué pasa si mi pago no se procesa correctamente?</summary>
-                    <p style="color: white; font-size: 17px;">Si tu pago falla, recibirás una notificación por tu cuenta de ForjaGym. Tienes un plazo de 3 días hábiles para regularizarlo antes de que tu acceso se suspenda temporalmente.</p>
-                </details>
-
-                <details class="detalle-par">
-                    <summary>¿Puedo pagar mi membresía de forma mensual o solo anual?</summary>
-                    <p style="color: white; font-size: 17px;">Ofrecemos ambas modalidades. El pago mensual te da mayor flexibilidad, mientras que el plan anual incluye un descuento por pago adelantado.</p>
-                </details>
-            </div>
-
-            <div id="msj-consulta" class="mt-5 mb-4 d-flex justify-content-center align-items-center" >
-                <div class="d-flex justify-content-center align-items-center text-center">
-                    <div id="icono" class="d-flex">
-                        <i class="fa-solid fa-user-gear" style="color: rgb(8, 20, 24);"></i>
+                        <label for="">CORREO</label>
+                        <input type="email" placeholder="tucorreo@gmail.com">
                     </div>
 
-                    <span class="text-start lh-2">
-                        <p class="fw-bold  mb-0" style="color: black; font-size: 18px;">¿No encontraste tu respusta?</p>
-                        <p class="mb-0 mt-0" style="color: rgb(8, 20, 24);">Nuestro equipo de soporte esta dispoble 24/7</p>
-                    </span>
+                    <div class="row">
+                        <label for="" class="col-12">ASUNTO</label>
+                    <select name="" id="opciones-asunto">
+                        <option value="">Problemas de pago</option>
+                        <option value="">Consultas de membresía</option>
+                        <option value="">Solicitud de reembolso</option>
+                        <option value="">Problemas de acceso</option>
+                        <option value="">Sugerencia o quejas</option>
+                        <option value="">otro asunto</option>
+                    </select>
+                    </div>
 
-                    <button onclick="window.location.href='Contacto.html'" class=" justify-content-center align-items-center text-center " id="boton-msj">Contactar soporte</button>
-                </div>
-
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="">Cuéntanos en qué podemos ayudarte...</textarea>
+                </form>
             </div>
         </div>
     </main>
