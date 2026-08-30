@@ -1,0 +1,56 @@
+.card{
+    gap: 1.25rem;
+    padding: 20px;
+    background-color: #131e32;
+    border: 3px solid #23304A ;
+    border-radius: 25px;
+    padding: 40px;
+}
+.card-tittle{
+    font-weight: 700;
+    color: #fff;
+}
+.item-info{
+    color: #999999;
+    border-bottom: 1px solid #E3D2BC;
+}
+.item_info{
+    color: #999999;
+    border-bottom: 1px solid #E3D2BC;
+    display: flex;
+    align-items: center;
+}
+.text_info{
+    font-size: 12px;
+}
+.valor-info{
+    font-size: 15px;
+    color: #fff;
+}
+.valor_info{
+    font-size: 15px;
+    color: #fff;
+    margin: 0 0 0 auto;
+}
+.boton-datos{
+    background: linear-gradient(to right, #64a7b1, #02b3ff, #0062ff);
+    color: #23304A ;
+    border: 3px solid #23304A ;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.boton-historial{
+    background: linear-gradient(to right, #64a7b1, #02b3ff, #0062ff);
+    color: #23304A ;
+    border: 3px solid #23304A ;
+    font-weight: bold;
+}
+
+main{
+    position: relative;
+    overflow: hidden;
+    background: 
+        radial-gradient(circle at 30% 20%, #14203A 0%, #0A0E17 55%),
+        radial-gradient(circle at 75% 65%, #1B2A4D 0%, #0A0E17 60%);
+}

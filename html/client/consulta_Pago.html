@@ -4,77 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForjaGym</title>
-    <link rel="stylesheet" href="css/consulta.css">
+    <link rel="stylesheet" href="/css/consulta.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light px-0 pt-0 pb-0 " id="barra-nav">
-            <div class="container-fluid px-0 pt-0 pb-0">
-                <div class="d-flex  w-100">
+        <nav class="navbar navbar-expand-lg borde py-1">
+            <div class="container-fluid contenedor">
+                <!-- LOGO NAVBAR -->
+                <a class="navbar-brand d-flex align-items-center" href="">
+                    <img src="/img/forjagym_icono.png" alt="Logo" class="d-inline-block me-2" style="height: 40px; font-weight: bold;"> 
+                    <span style="font-weight: bold; font-size: 20px" >ForjaGYM</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="w-100 d-flex px-5 align-items-center pb-0 pt-0">
-                        <img src="img/forjagym_icono.png" alt="" class="navbar-brand" style="height: 50px; width: auto;"> 
-                        <span style="font-weight: bold; font-size: x-large" >ForjaGym</span>
-                    </div>
+                <!-- CONTENIDO NAVBAR -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-start justify-content-center text-center gap-5 ms-auto fw-bold" id="consultas">
+                        <li class="nav-item" style="width: 120px;">
+                            <a href="Inicio.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item" style="width: 120px;">
+                            <a href="/html/client/Contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                        <li class="nav-item" style="width: 120px;">
+                            <a href="#" class="nav-link">suscripciones</a>
+                        </li>
 
-                    
-                        <div class="collapse navbar-collapse px-5 pt-0" style="font-weight:bold; font-size: 18px;" >
-                            
-                            <ul class="navbar-nav align-items-center justify-content-center text-center  gap-5" id="consultas">
-                                <li class="nav-item " style="width: 150px;" >
-                                    <a href="Inicio.html" class="nav-link">Inicio</a>
-                                </li>
-
-                                <li class="nav-item" style="width: 150px;">
-                                    <a href="Contacto.html" class="nav-link">Contacto</a>
-                                </li>
-
-                                <li class="nav-item" style="width: 150px;">
-                                    <a href="#" class="nav-link">suscripciones</a>
-                                </li>
-
-                                <!-- INICIO CONSULTAS OPCIONES -->
-
-                                <li class="nav-item dropdown p-0" style="width: 150px;">
-
-                                    <a href="" class="nav-link dropdown-toggle d-flex align-items-center justify-content-center text-center" 
-                                    role="button" data-bs-toggle="dropdown" id="consultas" aria-expanded="false">
-                                        consultas
-                                    </a>
-
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="consultas">
-                                        <li ><a class="dropdown-item" href="">Consultas de Pago</a></li>
-                                        <li><a class="dropdown-item" href="">Consultas de Membresía</a></li>
-                                        <li><a class="dropdown-item" href="">Consultas de Reembolso</a></li>
-                                    </ul>
-                                </li>
-
-                                <!-- FIN CONSULTAS OPCIONES -->
-
-                                <li class="nav-item" style="width: 150px;"> 
-                                    <a href="" class="nav-link">Notificaciones</a>
-                                </li>
-
-                                <li class="nav-item " style="width: 150px;">
-                                    <a href="" class="nav-link d-flex justify-content-center text-center gap-3">   
-                                        <span>usuario</span>
-                                        <i class="fa-solid fa-user"></i>
-                                    </a>
-                                </li>
+                        <!-- INICIO CONSULTAS OPCIONES -->
+                        <li class="nav-item dropdown p-0" style="width: 120px;">
+                            <a href="" class="nav-link dropdown-toggle d-flex align-items-center justify-content-center text-center" role="button" data-bs-toggle="dropdown" id="consultas" aria-expanded="false">
+                                consultas
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="consultas">
+                                <li><a class="dropdown-item" href="consulta_Pago.html">Consultas de Pago</a></li>
+                                <li><a class="dropdown-item" href="">Consultas de Membresía</a></li>
+                                <li><a class="dropdown-item" href="">Consultas de Reembolso</a></li>
                             </ul>
-                        </div>
-
+                        </li>
+                        <!-- FIN CONSULTAS OPCIONES -->
+                        <li class="nav-item" style="width: 120px;">
+                            <a href="" class="nav-link">Notificaciones</a>
+                        </li>
+                        <li class="nav-item" style="width: 120px;">
+                            <a href="" class="nav-link d-flex justify-content-center text-center gap-3">
+                                <span>usuario</span>
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
-
         </nav>
-
     </header>
-    
+
+
     <main class="flex-grow-1 d-flex align-items-center justify-content-center contenedor-hero">
         <div class="circulo-1"></div>
         <div class="circulo-2"></div>
