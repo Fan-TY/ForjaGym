@@ -45,7 +45,6 @@
     font-weight: 700;
 }
 .caja1{
-    
     padding: 40px;
     border-radius: 20px;
     display: flex;
@@ -111,4 +110,10 @@
 .boton-historial:hover{
     background-color: #999999;
     color: #fff;
+}
+.gym-footer{
+    border-top: 1px solid rgba(39, 39, 39, 0.253);
+    text-align: center;
+    padding: 20px;
+    color: #7c8f89;
 }
