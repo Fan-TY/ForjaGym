@@ -105,6 +105,21 @@ body {
     color: #ffffff;
 }
 
+/* ===== Botón principal (crear/guardar) ===== */
+.btn-primary {
+    background-color: #1f9d6c !important;
+    border-color: #1f9d6c !important;
+    color: #ffffff !important;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #17805a !important;
+    border-color: #17805a !important;
+    color: #ffffff !important;
+}
+
 /* ===== Card y tabla ===== */
 .card {
     background-color: #10261f;
