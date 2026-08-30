@@ -11,12 +11,11 @@
 }
 
 #min-icono{
-    width: 170px;
+    width: 200px;
     height: 30px;
-    background-color:rgb(203, 228, 236);
+    background-color: rgba(216, 90, 48, 0.08);
     border-radius: 20px;
-    color:rgb(45, 45, 237);
-
+    color: brown;
 }
 
 #detalle-soporte1{
@@ -55,7 +54,7 @@ footer, header{
     width: 520px;
     height: 520px;
     border-radius: 50%;
-    background: rgba(37, 99, 235, 0.08);
+    background: rgba(216, 90, 48, 0.08);
     z-index: 0;
 }
 
@@ -66,7 +65,7 @@ footer, header{
     width: 440px;
     height: 440px;
     border-radius: 50%;
-    background: rgba(37, 99, 235, 0.08);
+    background: rgba(216, 90, 48, 0.05);
     z-index: 0;
 }
 
@@ -76,4 +75,11 @@ footer, header{
 #barra-nav{
     background-color: snow;
     z-index: 3;
+    border-bottom: 3px solid rgba(227, 226, 220, 0.825) ;
+
+}
+
+footer{
+    border-top: 3px solid rgba(227, 226, 220, 0.825) ;
+
 }
