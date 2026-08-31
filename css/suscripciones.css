@@ -1,176 +1,76 @@
-/* ===========================
-   FONDO GENERAL
-=========================== */
-.body{
-    background-color: #060b16;
-}
-
-body{
-    background-color: #060b16;
-}
-
-/* ===========================
-   CONTENEDOR GENERAL
-=========================== */
 .contenedor{
     width: 100%;
     max-width: 1400px;
 }
-
-/* ===========================
-   NAVBAR
-=========================== */
-.navbar-brand{
-    color: #fff;
-    font-weight: 700;
-}
-.navbar-brand:hover{
-    color: #fff;
-    font-weight: 700;
+.body{
+    background-color: #0b1325;
 }
 
-.item_nav{
-    color: #919191;
-}
-.item_nav:hover{
-    color: #fff;
-    border-bottom: 3px solid #3b9dff;
-}
-
-.borde{
-    box-shadow: 0 1px 3px rgba(39, 39, 39, 0.253);
-}
-
-/* ===========================
-   TITULOS DE SECCION
-=========================== */
-h2{
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-/* ===========================
-   CAJAS / CONTENEDORES SECUNDARIOS
-=========================== */
 .caja{
-    background: #101b34;
+    background: #121e3b;
     padding: 13px;
     border-radius: 10px;
     box-shadow: 1px 1px 3px rgba(39, 39, 39, 0.253);
+
 }
 
-/* Iniciales del avatar (esquina superior derecha) */
-.iniciales{
-    background-color: #12294f;
-    width: 36px;
-    height: 36px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #7cc0ff;
-    font-size: 20px;
-}
 
-/* ===========================
-   BOTONES / FILTROS (pills)
-=========================== */
 .boton{
-    background-color: #0f1a30;
-    font-size: 13px;
-    padding: 5px 14px;
-    border-radius: 20px;
-    border: 0.5px solid #1c2a44;
-    color: #8fa2c4;
+    background-color: #131e32;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 1px solid #1c2a44;
+    color: #919191;
     transition: 0.3s;
 }
+
 .boton:hover{
     background-color: #1a2842;
     color: #fff;
 }
 .boton.active{
-    background-color: #1e63f0 !important;
+    background: linear-gradient(to right, #64a7b1, #02b3ff, #0062ff) !important; 
     color: #ffffff !important;
-    border-color: #1e63f0 !important;
+    border: 3px solid #23304A !important;
 }
-
-/* ===========================
-   GRID DE TARJETAS
-=========================== */
-.row.g-4{
-    --bs-gutter-x: 10px;
-    --bs-gutter-y: 10px;
-}
-
-/* ===========================
-   TARJETAS - PLANES DE ENTRENAMIENTO
-=========================== */
 .card{
-    background-color: #101c36;
-    border: 0.5px solid #1c2a44;
-    border-left: 3px solid #3b9dff;
-    border-radius: 10px;
+    background-color: #131e32;
+    border:1px solid #1c2a44;
     color: #fff;
 }
-.card .card-body{
-    padding: 12px 14px;
-}
 .card:hover{
-    border-color: #1c2a44;
-    border-left-color: #5eb4ff;
+    border:1px solid #02b3ff;
     transition: 0.3s;
 }
 .card:hover .card-text{
-    color: #7cc0ff;
+    color: #02b3ff;
     transition: 0.3s;
 }
-
-.card-title{
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 2px;
+.card-text{
+    font-size: 20px;
 }
 
 .card-subtitle{
-    color: #8fa2c4 !important;
-    font-size: 11px;
-    margin-bottom: 8px !important;
+    color: #919191;
 }
-
-.card-text{
-    font-size: 16px;
-    font-weight: 500;
-    color: #5eb4ff;
-    margin: 0;
-}
-
 .duracion{
-    color: #8fa2c4;
-    font-size: 11px;
-    align-self: flex-end;
+    color: #919191;
 }
 
-/* ===========================
-   TARJETAS - PRODUCTOS Y PROMOCIONES
-   (mismo bloque .card, pero sin acento lateral
-   para diferenciarlas de los planes)
-=========================== */
-.text-white.mt-4:nth-of-type(2) .card{
-    background-color: #0e1830;
-    border-left: 0.5px solid #16233f;
-}
-.text-white.mt-4:nth-of-type(2) .card-text{
-    color: #5eb4ff;
+.row.g-4 .col-lg-4 {
+    display: flex;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
-.gym-footer{
-    border-top: 1px solid rgba(39, 39, 39, 0.253);
-    text-align: center;
-    padding: 20px;
-    color: #7c8f89;
+.row.g-4 .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row.g-4 .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
