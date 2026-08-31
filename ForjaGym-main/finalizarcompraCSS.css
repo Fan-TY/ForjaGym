@@ -1,0 +1,486 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0b1325;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #162238;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.icono {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #df5226;
+}
+
+.titulo-header span {
+    color: #5d6d85;
+    font-size: 16px;
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1150px; 
+    margin: 60px auto; 
+    display: flex;
+    gap: 35px;
+}
+.columna-izquierda {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-seccion {
+    color: #5d6d85;
+    font-size: 15px;
+}
+
+
+.caja-plan {
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja-plan .info h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.caja-plan .info p {
+    color: #7888a0;
+    font-size: 14px;
+}
+
+.caja-plan .precio {
+    text-align: right;
+    color: #df5226;
+    font-weight: bold;
+}
+
+.caja-plan .precio .moneda {
+    font-size: 15px;
+    display: block;
+}
+
+.caja-plan .precio .monto {
+    font-size: 26px;
+}
+
+
+.opciones-pago {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-pago {
+    flex: 1;
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 20px 15px;
+    color: #7888a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.checkbox {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #7888a0;
+    border-radius: 2px;
+}
+
+
+.btn-pago.activo {
+    background: #332018;
+    border: 1px solid #df5226;
+    color: #df5226;
+}
+
+.btn-pago.activo .checkbox {
+    border-color: #df5226;
+}
+
+.caja-recurrente {
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.caja-recurrente .info h2 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.caja-recurrente .info p {
+    color: #7888a0;
+    font-size: 14px;
+}
+
+.switch {
+    width: 52px;
+    height: 28px;
+    background: #df5226;
+    border-radius: 20px;
+    padding: 3px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.boton-switch {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+}
+
+.columna-derecha {
+    flex: 1;
+}
+
+.caja-factura {
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caja-factura h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item-factura {
+    display: flex;
+    justify-content: space-between;
+    color: #7888a0;
+    font-size: 15px;
+}
+
+.total-factura {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.precio-final {
+    color: #df5226;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-confirmar {
+    background: #df5226;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+} */
+
+/* CSS 2 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0b1325;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #162238;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.icono {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #df5226;
+}
+
+.titulo-header span {
+    color: #5d6d85;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: 60px auto;
+    display: flex;
+    gap: 35px;
+}
+
+.columna-izquierda {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-seccion {
+    color: #5d6d85;
+    font-size: 15px;
+}
+
+.caja-plan {
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja-plan .info h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.caja-plan .info p {
+    color: #7888a0;
+    font-size: 14px;
+}
+
+.caja-plan .precio {
+    text-align: right;
+    color: #df5226;
+    font-weight: bold;
+}
+
+.caja-plan .precio .moneda {
+    font-size: 15px;
+    display: block;
+}
+
+.caja-plan .precio .monto {
+    font-size: 26px;
+}
+
+.opciones-pago {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-oculto,
+.checkbox-oculto {
+    display: none;
+}
+
+.btn-pago {
+    flex: 1;
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 20px 15px;
+    color: #7888a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.btn-pago:hover {
+    border-color: #df5226;
+    color: #ffffff;
+}
+
+.checkbox {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #7888a0;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+}
+
+.radio-oculto:checked + .btn-pago {
+    background: #332018;
+    border-color: #df5226;
+    color: #df5226;
+}
+
+.radio-oculto:checked + .btn-pago .checkbox {
+    border-color: #df5226;
+    background-color: #df5226;
+}
+
+.caja-recurrente {
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.caja-recurrente .info h2 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.caja-recurrente .info p {
+    color: #7888a0;
+    font-size: 14px;
+}
+
+.switch {
+    width: 52px;
+    height: 28px;
+    background: #1c2a44;
+    border-radius: 20px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.boton-switch {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.checkbox-oculto:checked + .switch {
+    background: #df5226;
+}
+
+.checkbox-oculto:checked + .switch .boton-switch {
+    transform: translateX(24px);
+}
+
+.columna-derecha {
+    flex: 1;
+}
+
+.caja-factura {
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caja-factura h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item-factura {
+    display: flex;
+    justify-content: space-between;
+    color: #7888a0;
+    font-size: 15px;
+}
+
+.total-factura {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.precio-final {
+    color: #df5226;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-confirmar {
+    background: #df5226;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn-confirmar:hover {
+    background: #f05c30;
+}
+
+.btn-confirmar:active {
+    transform: scale(0.98);
+}

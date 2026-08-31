@@ -1,0 +1,134 @@
+.card{
+    gap: 1.25rem;
+    padding: 20px;
+    background-color: #131e32;
+    border: 3px solid #23304A ;
+    border-radius: 25px;
+    padding: 40px;
+    z-index: 3;
+}
+.card-tittle{
+    font-weight: 700;
+    color: #fff;
+}
+.item-info{
+    color: #999999;
+    border-bottom: 1px solid #E3D2BC;
+    font-weight: bold;
+}
+.item_info{
+    color: #999999;
+    border-bottom: 1px solid #E3D2BC;
+    display: flex;
+    align-items: center;
+}
+.text_info{
+    font-size: 12px;
+}
+.valor-info{
+    font-size: 15px;
+    color: #fff;
+}
+.valor_info{
+    font-size: 15px;
+    color: #fff;
+    margin: 0 0 0 auto;
+}
+
+
+/*botones*/
+
+
+.boton-datos{
+    background: linear-gradient(to right, #64a7b1, #02b3ff, #0062ff);
+    color: white;
+    border: 3px solid #23304A ;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.boton-historial{
+    background: linear-gradient(to right, #64a7b1, #02b3ff, #0062ff);
+    color: white;
+    border: 3px solid #23304A ;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*fondo*/
+main{
+    position: relative;
+    overflow: hidden;
+    background: 
+        radial-gradient(circle at 30% 20%, #14203A 0%, #0A0E17 55%),
+        radial-gradient(circle at 75% 65%, #1B2A4D 0%, #0A0E17 60%);
+}
+
+
+.circulo-2 {
+    position: absolute;
+    bottom: -260px;
+    left: -10%;
+    width: 760px;
+    height: 760px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(56,189,248,0.25), rgba(56,189,248,0) 70%);
+    z-index: 0;
+}
+
+.circulo-1 {
+    position: absolute;
+    top: -240px;
+    right: -200px;
+    width: 720px;
+    height: 720px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(56,189,248,0.25), rgba(56,189,248,0) 70%);
+    z-index: 0;
+}
+
+.circulo-1,
+.circulo-2 {
+    pointer-events: none;
+}
+
+
+.estado{
+    background: linear-gradient(to right, #64a7b1, #02b3ff, #0062ff);
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.estado p{
+    margin: 0 25px;
+}
+
+.titulo{
+    background: linear-gradient(to right, #64a7b1, #02b3ff, #0062ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.caja1{
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-size: 3rem;
+    font-weight: 700;
+}
+

@@ -1,0 +1,85 @@
+#formulario {
+    width: 500px;
+    height: 450px;
+    border: 3px solid rgba(227, 226, 220, 0.825);
+    padding: 40px;
+    border-radius: 30px;
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+
+}
+
+#min-icono{
+    width: 200px;
+    height: 30px;
+    background-color: rgba(216, 90, 48, 0.08);
+    border-radius: 20px;
+    color: brown;
+}
+
+#detalle-soporte1{
+    border-right: 3px solid rgb(209, 196, 196);
+    padding-right:30px ;
+
+}
+
+p{
+    font-size: 18px;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+footer, header{
+    z-index: 3;
+}
+
+/* Fondo de Soporte login */
+
+.contenedor-hero {
+    position: relative;
+    overflow: hidden;  
+    background-color: #FDF7F3;
+    
+}
+
+.circulo-1 {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: rgba(216, 90, 48, 0.08);
+    z-index: 0;
+}
+
+.circulo-2 {
+    position: absolute;
+    bottom: -350px;
+    left: 25%;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    background: rgba(216, 90, 48, 0.05);
+    z-index: 0;
+}
+
+
+/* Barra de navegacion*/
+
+#barra-nav{
+    background-color: snow;
+    z-index: 3;
+    border-bottom: 3px solid rgba(227, 226, 220, 0.825) ;
+
+}
+
+footer{
+    border-top: 3px solid rgba(227, 226, 220, 0.825) ;
+
+}

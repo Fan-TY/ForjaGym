@@ -1,0 +1,299 @@
+/* ===== Fondo general oscuro ===== */
+body {
+    background-color: #0d1f1a;
+    font-family: 'Poppins', sans-serif;
+    color: #d5dbe0;
+}
+
+/* ===== Navbar oscuro ===== */
+.navbar {
+    background-color: #0d1f1a !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #9fb3ac !important;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Línea verde debajo del link activo del navbar */
+.nav-link.active {
+    color: #ffffff !important;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: #1f9d6c;
+    border-radius: 2px;
+}
+
+.logo-navbar {
+    height: 60px;
+    width: 60px;
+    margin-right: 0.6rem;
+    object-fit: contain;
+}
+
+/* Avatar circular con iniciales */
+.caja {
+    margin-left: 1rem;
+}
+
+.iniciales {
+    width: 40px;
+    height: 40px;
+    background-color: #1f9d6c;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+
+/* ===== Banner===== */
+.banner-section {
+    background-color: #10261f;
+    border-radius: 12px;
+    padding: 1.2rem 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.banner-section p {
+    color: #9fb3ac;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+
+.banner-section h2 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+}
+
+/* ===== Botones de filtro ===== */
+.btn-outline-success {
+    background-color: #16332c;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #cfd8d5;
+    border-radius: 999px;
+    padding: 0.4rem 1rem;
+}
+
+.btn-outline-success.active,
+.btn-outline-success:hover {
+    background-color: #1f9d6c;
+    border-color: #1f9d6c;
+    color: #ffffff;
+}
+
+/* ===== Botón principal (crear/guardar) ===== */
+.btn-primary {
+    background-color: #1f9d6c !important;
+    border-color: #1f9d6c !important;
+    color: #ffffff !important;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #17805a !important;
+    border-color: #17805a !important;
+    color: #ffffff !important;
+}
+
+/* ===== Card y tabla ===== */
+.card {
+    background-color: #10261f;
+    border-radius: 12px;
+    border: none;
+}
+
+.table {
+    background-color: transparent;
+    color: #d5dbe0;
+    margin-bottom: 0;
+}
+
+.table thead th {
+    color: #7c8f89 !important;
+    font-weight: 500;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.table tbody td {
+    border-color: rgba(255, 255, 255, 0.06);
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.table td,
+.table th {
+    background-color: transparent !important;
+    color: #d5dbe0 !important;
+}
+
+.link-editar {
+    color: #1f9d6c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-editar:hover {
+    text-decoration: underline;
+}
+
+/* ===== Estado de suscripción ===== */
+.badge.bg-success {
+    background-color: rgba(31, 157, 108, 0.15) !important;
+    color: #4ade80 !important;
+    font-weight: 500;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px;
+}
+
+.badge.bg-warning {
+    background-color: rgba(224, 122, 46, 0.15) !important;
+    color: #e08c2e !important;
+    font-weight: 500;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px;
+}
+
+/* ===== Perfil del recepcionista ===== */
+.avatar-perfil {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background-color: #1f9d6c;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.nombre-perfil {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.badge-rol {
+    display: inline-block;
+    background-color: rgba(31, 157, 108, 0.15);
+    color: #4ade80;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+}
+
+.turno-perfil {
+    color: #9fb3ac;
+    font-size: 0.9rem;
+}
+
+.titulo-tarjeta {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+
+.lista-perfil {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-perfil li {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #d5dbe0;
+    font-size: 0.95rem;
+}
+
+.lista-perfil li:last-child {
+    border-bottom: none;
+}
+
+.lista-perfil i {
+    color: #1f9d6c;
+    width: 1.2rem;
+    text-align: center;
+}
+
+.metrica-caja {
+    background-color: #16332c;
+    border-radius: 10px;
+    padding: 0.9rem 0.5rem;
+}
+
+.metrica-numero {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.metrica-label {
+    color: #9fb3ac;
+    font-size: 0.78rem;
+    margin-top: 0.2rem;
+}
+
+.btn-outline-success {
+    border-radius: 8px;
+}
+
+/* Ajustes móviles del perfil */
+@media (max-width: 575.98px) {
+    .nombre-perfil {
+        font-size: 1.2rem;
+    }
+
+    .card.p-4 {
+        padding: 1.2rem !important;
+    }
+}
+
+/* ===== Footer ===== */
+.footer-forjagym {
+    background-color: #10261f;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.footer-forjagym p {
+    color: #7c8f89;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
