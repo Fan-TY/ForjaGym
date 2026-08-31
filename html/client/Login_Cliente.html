@@ -12,17 +12,22 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <header>
+    <header style="background-color: #06080f;">
         <nav class="navbar navbar-expand-lg borde py-1">
-            <div class="container-fluid contenedor">
+            <div class="container-fluid contenedo">
                 <!-- LOGO NAVBAR -->
                 <a class="navbar-brand d-flex align-items-center" href="">
                     <img src="/img/forjagym_icono.png" alt="Logo" class="d-inline-block me-2" style="height: 40px; font-weight: bold;"> 
-                    <span style="font-weight: bold; font-size: 20px" >ForjaGYM</span>
+                    <span style="font-weight: bold; font-size: 20px; color: white;" >ForjaGYM</span>
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
             </div>
         </nav>
     </header>
+
 
 
     <main class="flex-grow-1 d-flex align-items-center justify-content-center contenedor-hero">
@@ -36,20 +41,20 @@
 
                 <div id="min-icono" class="d-flex align-items-center gap-2 justify-content-center text-center mb-4">
                     <i class="fa-solid fa-bolt"></i>
-                    <p class="mb-0">Zona de socios</p>
+                    <p class="mb-0 fw-bold" style="color:rgb(238, 241, 244);">Zona de socios</p>
                 </div>
 
-                <h1>ENTRENA SIN LIMITES</h1>
+                <h1 class="text-white fw-bold">ENTRENA SIN LIMITES</h1>
                 <p>accede a tus planes, promociones y pagos en un solo lugar</p>
 
                 <div id="contenedor-detalle" class="d-flex gap-5 pt-4">
                     <div id="detalle-soporte1">
-                        <h2>5</h2> 
+                        <h2 class="text-white">5</h2> 
                         <p>planes activos</p>
                     </div>
 
                     <div id="detalle-soporte2">
-                        <h2>24/7</h2>
+                        <h2 class="text-white">24/7</h2>
                         <p>acceso app</p>
                     </div>
                 </div>
@@ -57,16 +62,16 @@
             </section>
 
             <section id="formulario" class="col-6 ">
-                <h1>Iniciar sesión</h1>
+                <h1 class="text-white">Iniciar sesión</h1>
                 <p>Bienvenido de nuevo, socio</p>
 
             <!-- Formulario de inicio de sesion -->
                 <div id="contenido1" class="contenido text-start">
                     <form action="" id="formulario_iniciar">
-                        <label for="codigo" class="form-label mb-3">correo eléctronico</label>
+                        <label for="codigo" class="form-label mb-3" style="color: #b5b5b5;">correo eléctronico</label>
                         <input type="text" id="codigo" name="user_cod" placeholder="tucorrero@gmail.com" class="form-control" style="background-color: rgba(137, 202, 220, 0.08) ;"> 
 
-                        <label for="pass" class="form-label mb-3 mt-3" >contraseña</label>
+                        <label for="pass" class="form-label mb-3 mt-3" style="color: #b5b5b5;" >contraseña</label>
                         <input type="password" id="pass" name="user_pass" placeholder="******" class="form-control" style="background-color: rgba(137, 202, 220, 0.08) ;">
 
                         <!--SUBMIT PROXIMAMENTE-->

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForjaGym</title>
+    <link rel="stylesheet" href="/css/compra.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header style="background-color: #06080f;">
+        <nav class="navbar navbar-expand-lg borde py-1">
+            <div class="container-fluid contenedo">
+                <!-- LOGO NAVBAR -->
+                <a class="navbar-brand d-flex align-items-center" href="">
+                    <img src="/img/forjagym_icono.png" alt="Logo" class="d-inline-block me-2" style="height: 40px; font-weight: bold;"> 
+                    <span style="font-weight: bold; font-size: 20px; color: white;" >ForjaGYM</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- CONTENIDO NAVBAR -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-start justify-content-center text-center gap-5 ms-auto fw-bold" id="consultas">
+                        <li class="nav-item" style="width: 120px;">
+                            <a href="Inicio.html" class="nav-link text-white">Inicio</a>
+                        </li>
+                        <li class="nav-item" style="width: 120px;">
+                            <a href="/html/client/Contacto.html" class="nav-link text-white">Contacto</a>
+                        </li>
+                        <li class="nav-item" style="width: 120px;">
+                            <a href="/html/client/suscripciones_usuario.html" class="nav-link text-white">suscripciones</a>
+                        </li>
+
+                        <!-- INICIO CONSULTAS OPCIONES -->
+                        <li class="nav-item dropdown p-0" style="width: 120px;">
+                            <a href="" class="nav-link dropdown-toggle d-flex align-items-center justify-content-center text-center text-white" role="button" data-bs-toggle="dropdown" id="consultas" aria-expanded="false">
+                                consultas
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="consultas">
+                                <li><a class="dropdown-item" href="consulta_Pago.html">Consultas de Pago</a></li>
+                                <li><a class="dropdown-item" href="">Consultas de Membresía</a></li>
+                                <li><a class="dropdown-item" href="">Consultas de Reembolso</a></li>
+                            </ul>
+                        </li>
+                        <!-- FIN CONSULTAS OPCIONES -->
+                        <li class="nav-item" style="width: 120px;">
+                            <a href="/html/client/Notificacion.html" class="nav-link text-white">Notificaciones</a>
+                        </li>
+                        <li class="nav-item" style="width: 120px;">
+                            <a href="/html/client/Perfil_Usuario.html" class="nav-link d-flex justify-content-center text-center gap-3">
+                                <span class="text-white">usuario</span>
+                                <i class="fa-solid fa-user text-white"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main class="flex-grow-1 d-flex align-items-center justify-content-center contenedor-hero">
+        <!-- lado izquierdo -->
+        <div class="circulo-1"></div>
+        <div class="circulo-2"></div>
+        <div class="columna-izquierda pe-5 ms-5 mt-5 mb-4" id="informacion">
+            
+            <p class="titulo-seccion fw-bold m-0">PLAN SELECCIONADO</p>
+            <div class="caja-plan ">
+                <div class="info">
+                    <h2 class="text-white fw-bold">fuerza total — mensual</h2>
+                    <p style="font-size: 16px;">incluye acceso a coach y zona de recuperación</p>
+                </div>
+                <div class="precio">
+                    <span class="moneda">S/</span>
+                    <span class="monto">180</span>
+                </div>
+            </div>
+
+            <p class="titulo-seccion fw-bold m-0">MEDIO DE PAGO</p>
+            <div class="opciones-pago">
+                <input type="radio" name="metodo_pago" id="pago-tarjeta" class="radio-oculto" checked>
+                <label for="pago-tarjeta" class="btn-pago">
+                    <span class="checkbox"></span>
+                    <span>Tarjeta de débito / crédito</span>
+                </label>
+
+                <input type="radio" name="metodo_pago" id="pago-billetera" class="radio-oculto">
+                <label for="pago-billetera" class="btn-pago">
+                    <span class="checkbox"></span>
+                    <span>Billetera digital (Yape / Plin)</span>
+                </label>
+
+                <input type="radio" name="metodo_pago" id="pago-transferencia" class="radio-oculto">
+                <label for="pago-transferencia" class="btn-pago">
+                    <span class="checkbox"></span>
+                    <span>Transferencia bancaria</span>
+                </label>
+                <!--  <button class="btn-pago activo">
+                    <span class="checkbox"></span>
+                    <span>tarjeta</span>
+                </button>
+                <button class="btn-pago">
+                    <span class="checkbox"></span>
+                    <span>billetera digital</span>
+                </button>
+                <button class="btn-pago">
+                    <span class="checkbox"></span>
+                    <span>transferencia</span>
+                </button> -->
+            </div>
+
+            <div class="caja-recurrente m-0">
+                <div class="info">
+                    <h2 class="fw-bold text-white" >pago recurrente</h2>
+                    <p style="font-size: 16px;">renovación automática cada mes</p>
+                </div>
+                <!-- <div class="switch">
+                    <div class="boton-switch"></div>
+                </div>-->
+                <input type="checkbox" id="switch-recurrente" class="checkbox-oculto" checked>
+                <label for="switch-recurrente" class="switch">
+                    <span class="boton-switch"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <!-- lado derecho -->
+        <div class="columna-derecha  mt-5 mb-4 ">
+            <div class="caja-factura">
+                <h2 class="fw-bold text-white">Resumen de pago</h2>
+                
+                <div class="item-factura">
+                    <span style="font-size: 16px;">plan fuerza total</span>
+                    <span style="font-size: 16px;">S/ 180.00</span>
+                </div>
+                <div class="item-factura">
+                    <span style="font-size: 16px;">IGV</span>
+                    <span style="font-size: 16px;">S/ 32.40</span>
+                </div>
+
+                <div class="total-factura">
+                    <span style="font-size: 16px;">total</span>
+                    <span class="precio-final" >S/ 212.40</span>
+                </div>
+
+                <button class="btn-confirmar fw-bold "> PAGAR </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-4" style="color: rgba(125, 122, 122, 0.926); background: snow;">
+            
+        <div class="container">
+            <div class="row text-center text-md-start justify-content-center align-items-center  ">
+
+            <div class="col-3">
+                <h5>sede principal</h5> 
+                <span style="color: gray;">
+                    <i class="fa-solid fa-location-dot"></i> Av. larco 1234, Miraflores, Lima
+                </span>
+            </div>
+
+            <div class="col-3">
+                <h5>teléfono</h5> 
+                <span style="color: gray;"> 
+                    <i class="fa-solid fa-phone"></i> +51 123 456 789
+                </span>
+            </div>
+
+
+            <div class="col-3">
+                <h5>correo eléctronico</h5> 
+                <span  style="color: gray" >
+                    <i class="fa-solid fa-envelope" ></i> forjagym@gmail.com
+                </span>
+            </div>
+
+            <div class="col-3"> 
+                <h5>instagram</h5>
+                <span style="color:gray">
+                    <i class="fa-brands fa-instagram"></i> ForjaGym.pe
+                </span>
+            </div>
+
+
+    </footer>
+</body>
+</html>

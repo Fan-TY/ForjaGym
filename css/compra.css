@@ -1,0 +1,265 @@
+/**/
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: 60px auto;
+    display: flex;
+    gap: 35px;
+}
+.contenedor-hero {
+    position: relative;
+    overflow: hidden;
+    background: 
+        radial-gradient(circle at 30% 20%, #14203A 0%, #0A0E17 55%),
+        radial-gradient(circle at 75% 65%, #1B2A4D 0%, #0A0E17 60%);
+}
+
+.circulo-2 {
+    position: absolute;
+    bottom: -260px;
+    left: -10%;
+    width: 760px;
+    height: 760px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(56,189,248,0.25), rgba(56,189,248,0) 70%);
+    z-index: 0;
+}
+
+.circulo-1 {
+    position: absolute;
+    top: -240px;
+    right: -200px;
+    width: 720px;
+    height: 720px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(56,189,248,0.25), rgba(56,189,248,0) 70%);
+    z-index: 0;
+}
+
+#informacion{
+    z-index: 3;
+    position: relative;
+}
+
+.circulo-1,
+.circulo-2 {
+    pointer-events: none;
+}
+
+
+/**/
+
+.columna-izquierda {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-seccion {
+    background: linear-gradient(to right, #64a7b1, #02b3ff, #0062ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 40px;
+
+}
+
+.caja-plan {
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja-plan .info h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.caja-plan .info p {
+    color: #7888a0;
+    font-size: 14px;
+}
+
+.caja-plan .precio {
+    text-align: right;
+    color: #38BDF8;
+    font-weight: bold;
+}
+
+.caja-plan .precio .moneda {
+    font-size: 15px;
+    display: block;
+}
+
+.caja-plan .precio .monto {
+    font-size: 26px;
+}
+
+.opciones-pago {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-oculto,
+.checkbox-oculto {
+    display: none;
+}
+
+.btn-pago {
+    flex: 1;
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 20px 15px;
+    color: #7888a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.btn-pago:hover {
+    border-color: #38BDF8;
+    color: #ffffff;
+}
+
+.checkbox {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #7888a0;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+}
+
+.radio-oculto:checked + .btn-pago {
+    background: #142338;
+    border-color: #38BDF8;
+    color: #38BDF8;
+}
+
+.radio-oculto:checked + .btn-pago .checkbox {
+    border-color: #38BDF8;
+    background-color: #38BDF8;
+}
+
+.caja-recurrente {
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.caja-recurrente .info h2 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.caja-recurrente .info p {
+    color: #7888a0;
+    font-size: 14px;
+}
+
+.switch {
+    width: 52px;
+    height: 28px;
+    background: #1c2a44;
+    border-radius: 20px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.boton-switch {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.checkbox-oculto:checked + .switch {
+    background: linear-gradient(90deg, #0EA5E9, #38BDF8);
+}
+
+.checkbox-oculto:checked + .switch .boton-switch {
+    transform: translateX(24px);
+}
+
+.columna-derecha {
+    flex: 1;
+}
+
+.caja-factura {
+    background: #131e32;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caja-factura h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item-factura {
+    display: flex;
+    justify-content: space-between;
+    color: #7888a0;
+    font-size: 15px;
+}
+
+.total-factura {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.precio-final {
+    color: #38BDF8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-confirmar {
+    background: linear-gradient(90deg, #0EA5E9, #38BDF8);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 18px rgba(56,189,248,0.3);
+}
+
+.btn-confirmar:hover {
+    background: linear-gradient(90deg, #38BDF8, #7DD3FC);
+    box-shadow: 0 0 26px rgba(56,189,248,0.45);
+}
+
+.btn-confirmar:active {
+    transform: scale(0.98);
+}
