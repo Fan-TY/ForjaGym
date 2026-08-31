@@ -4,40 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/Soporte.css">
+    <link rel="stylesheet" href="/css/Soporte.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
 </head>
 
 <body class="d-flex flex-column min-vh-100 w-100">
-    <header>
+    <header style="background-color: #265035;">
         <nav class="navbar navbar-expand-lg navbar-light px-0 pt-0 pb-0 " id="barra-nav">
             <div class="container-fluid px-0 pt-0 pb-0">
                 <div class="d-flex  w-100">
 
                     <div class="w-100 d-flex px-5 align-items-center pb-0 pt-0">
-                        <img src="img/forjagym_icono.png" alt="" class="navbar-brand" style="height: 50px; width: auto;"> 
-                        <span style="font-weight: bold; font-size: x-large" >ForjaGym</span>
+                        <img src="/img/forjagym_icono.png" alt="" class="navbar-brand" style="height: 50px; width: auto;"> 
+                        <span style="font-weight: bold; font-size: x-large" class="text-white" >ForjaGym</span>
                     </div>
-
-                    
-                        <div class="collapse navbar-collapse px-5 pt-0" style="font-weight:bold; font-size: 18px;" >
-                            
-                            <ul class="navbar-nav gap-5">
-                                <li class="nav-item " >
-                                    <a href="" class="nav-link">Inicio</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">Contacto</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">suscripciones</a>
-                                </li>
-                            </ul>
-                        </div>
 
                 </div>
 
@@ -58,40 +40,41 @@
 
                 <div id="min-icono" class="d-flex align-items-center gap-2 justify-content-center text-center mb-4">
                     <i class="fa-solid fa-bolt"></i>
-                    <p class="mb-0">Gestión todo en uno</p>
+                    <p class="mb-0 text-white fw-bold">Gestión todo en uno</p>
                 </div>
 
-                <h1>LA GESTIÓN EMPIEZA AQUI</h1>
-                <p>controla suscripciones, pagos y reportes de contabilidad en tiempo real.</p>
+                <h1 class="fw-bold text-white">LA GESTIÓN EMPIEZA AQUI</h1>
+                <p style="color: rgba(184, 179, 179, 0.906);">controla suscripciones, pagos y reportes de contabilidad en tiempo real.</p>
 
                 <div id="contenedor-detalle" class="d-flex gap-5 pt-4">
                     <div id="detalle-soporte1">
-                        <h2>+500</h2> 
-                        <p>socios activos</p>
+                        <h2 class="fw-bold text-white">+500</h2> 
+                        <p style="color: rgba(184, 179, 179, 0.906);">socios activos</p>
                     </div>
 
                     <div id="detalle-soporte2">
-                        <h2>24/7</h2>
-                        <p>soporte</p>
+                        <h2 class="fw-bold text-white">24/7</h2>
+                        <p style="color: rgba(184, 179, 179, 0.906);">soporte</p>
                     </div>
                 </div>
 
             </section>
 
             <section id="formulario" class="col-6 ">
-                <h1>Iniciar sesión</h1>
-                <p>Ingresa tus credenciales para continuar</p>
+                <h1 class="text-white fw-bold">Iniciar sesión</h1>
+                <p style="color: rgba(184, 179, 179, 0.906);">Ingresa tus credenciales para continuar</p>
 
             <!-- Formulario de inicio de sesion -->
                 <div id="contenido1" class="contenido text-start">
                     <form action="" id="formulario_iniciar">
-                        <label for="codigo" class="form-label mb-3">código de usuario</label>
+                        <label for="codigo" class="form-label mb-3" style="color: rgba(184, 179, 179, 0.906);">código de usuario</label>
                         <input type="text" id="codigo" name="user_cod" placeholder="4B7D" class="form-control" style="background-color: rgba(216, 90, 48, 0.08) ;"> 
 
-                        <label for="pass" class="form-label mb-3 mt-3" >contraseña</label>
+                        <label for="pass" class="form-label mb-3 mt-3" style="color: rgba(184, 179, 179, 0.906);">contraseña</label>
                         <input type="password" id="pass" name="user_pass" placeholder="******" class="form-control" style="background-color: rgba(216, 90, 48, 0.08) ;">
 
-                        <button type="submit" class="btn btn-danger w-100 mt-4" style="height: 45px; font-weight: bold;">Ingresar</button>
+                        <button type="button" class="btn w-100 mt-4" style="height: 45px; font-weight: bold; background-color:  #4ADE80" onclick="window.location.href='/VIsta empleados suscripciones e historial/pages/suscripciones_clientes.html'">
+                            Ingresar</button>
                     </form>
                 </div>
             </section>

@@ -1,31 +1,33 @@
 #formulario {
     width: 500px;
     height: 450px;
-    border: 3px solid rgba(227, 226, 220, 0.825);
+    border: 3px solid #1C3B24;
     padding: 40px;
     border-radius: 30px;
     z-index: 2;
     position: relative;
-    background-color: #fff;
+    background-color: #0F1A12;
 
 }
 
 #min-icono{
-    width: 200px;
+    width: 230px;
     height: 30px;
-    background-color: rgba(216, 90, 48, 0.08);
+    background: linear-gradient(90deg, #22C55E, #4ADE80);
     border-radius: 20px;
-    color: brown;
+    color: #fff;
+
 }
 
 #detalle-soporte1{
-    border-right: 3px solid rgb(209, 196, 196);
+    border-right: 3px solid #1A3B24;
     padding-right:30px ;
 
 }
 
 p{
     font-size: 18px;
+    color: #8BA39B;
 
 }
 
@@ -43,7 +45,7 @@ footer, header{
 .contenedor-hero {
     position: relative;
     overflow: hidden;  
-    background-color: #FDF7F3;
+    background-color: #0A120E;
     
 }
 
@@ -54,7 +56,7 @@ footer, header{
     width: 520px;
     height: 520px;
     border-radius: 50%;
-    background: rgba(216, 90, 48, 0.08);
+    background: radial-gradient(circle, rgba(34,197,94,0.45), rgba(34,197,94,0) 70%);
     z-index: 0;
 }
 
@@ -65,21 +67,6 @@ footer, header{
     width: 440px;
     height: 440px;
     border-radius: 50%;
-    background: rgba(216, 90, 48, 0.05);
+    background: radial-gradient(circle, rgba(74,222,128,0.4), rgba(74,222,128,0) 70%);
     z-index: 0;
-}
-
-
-/* Barra de navegacion*/
-
-#barra-nav{
-    background-color: snow;
-    z-index: 3;
-    border-bottom: 3px solid rgba(227, 226, 220, 0.825) ;
-
-}
-
-footer{
-    border-top: 3px solid rgba(227, 226, 220, 0.825) ;
-
 }
