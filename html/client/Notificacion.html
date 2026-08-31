@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForjaGym</title>
-    <link rel="stylesheet" href="/css/contacto.css">
+
+    <link rel="stylesheet" href="/css/notificacion_usuario.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/perfil_usuario.css">
+    
 </head>
-<body class="d-flex flex-column min-vh-100">
-
+<body class="d-flex flex-column min-vh-100 w-100">
     <header style="background-color: #06080f;">
         <nav class="navbar navbar-expand-lg borde py-1">
             <div class="container-fluid contenedo">
@@ -63,97 +65,101 @@
         </nav>
     </header>
 
-    
-    <main class="flex-grow-1 d-flex align-items-center justify-content-center contenedor-hero">
-        <div class="circulo-1"></div>
-        <div class="circulo-2"></div>
 
-        <div class="text-center pt-5" style="max-width: 900px; width: 100%;">
 
-            <div class="text-center align-items-center justify-content-center mb-5" >
-                <div id="detalle-consulta" class="d-flex align-items-center gap-2 justify-content-center">
-                    <i class="fa-solid fa-headset"></i>
-                    <p class="mb-0">Centro de ayuda</p>
-                </div>
-
-                <p class="fw-bold lh-1" style="color: white; font-size: 60px;" >HABLEMOS CON</p>
-                <p id="texto-degradado" class="fw-bold lh-1">NUESTRO EQUIPO</p>
-                <p style="color: rgb(227, 218, 218); font-size: 25px;" >envianos tu consulta y te responderemos en brevedad</p>
-            </div>
-
-            <div id="formulario-consulta" class="pb-4 pt-4 text-start mb-5">
-
-                <form action="" class="row ">
-
-                    <div class="col-6">
-                        <label for="" class="text-white d-block fw-bold pb-2">NOMBRE</label>
-                        <input type="text" placeholder="tu nombre" class="input1 me-5s">
-                    </div>
-
-                    
-                    <div class="col-6">
-                        <label for="" class="text-white d-block fw-bold pb-2">CORREO</label>
-                        <input type="email" placeholder="tucorreo@gmail.com" class="input1 me-5">
-                    </div>
-
-                    <div class="mt-4">
-                        <label for="" class="text-white mb-2 fw-bold d-block">ASUNTO</label>
-                        <select name="" id="opciones-asunto" class="text">
-                            <option value="">Problemas de pago</option>
-                            <option value="">Consultas de membresía</option>
-                            <option value="">Solicitud de reembolso</option>
-                            <option value="">Problemas de acceso</option>
-                            <option value="">Sugerencia o quejas</option>
-                            <option value="">otro asunto</option>
-                        </select>
-                    </div>
-
-                    <div class="mt-4">
-                        <label for="" class="text-white mb-2 fw-bold">MENSAJE</label>
-                        <textarea name="" id="" rows="5" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
-                        <button class="mt-3 btn-enviar">Enviar mensaje</button>
-                    </div>
-
-                </form>
-            </div>
+    <main>
+        <div class="filtro">
+            <button class="filtro activo">Todas</button>
+            <button class="filtro">Vencimiento</button>
+            <button class="filtro">Nuevos planes</button>
+            <button class="filtro">Actualización</button>
         </div>
+
+        <!-- Lista de notificaciones -->
+        <section class="notificaciones">
+            <!-- Notificación 1 - destacada -->
+            <article class="notificacion destacada">
+                <div class="detalle">
+                    <span class="checkbox"></span>
+                    <div>
+                        <h2>Tu plan Fuerza Total está por vencer en 5 días</h2>
+                        <p>Renueva antes del 9 de octubre para no perder tu progreso</p>
+                    </div>
+                </div>
+                <span class="tiempo">hoy</span>
+            </article>
+
+            <!-- Notificación 2 -->
+            <article class="notificacion">
+                <div class="detalle">
+                    <span class="checkbox"></span>
+                    <div>
+                        <h2>Nuevo plan: Funcional Express</h2>
+                        <p>Clase de 30 minutos</p>
+                    </div>
+                </div>
+                <span class="tiempo">hoy</span>
+            </article>
+
+            <!-- Notificación 3 -->
+            <article class="notificacion">
+                <div class="detalle">
+                    <span class="checkbox"></span>
+                    <div>
+                        <h2>Actualización en plan Fuerza Total</h2>
+                        <p>Ahora incluye acceso a zona de recuperación</p>
+                    </div>
+                </div>
+                <span class="tiempo">hoy</span>
+            </article>
+
+            <!-- Bloque frecuencia -->
+            <section class="configuracion-frecuencia">
+                <p>Frecuencia del aviso de vencimiento</p>
+                <div class="opciones">
+                    <button class="opcion activa">7 días antes</button>
+                    <button class="opcion">3 días antes</button>
+                    <button class="opcion">1 día antes</button>
+                </div>
+            </section>
+        </section>
     </main>
 
-    <footer class="p-4" style="color: rgba(125, 122, 122, 0.926); background: snow;">
-            
+    <footer class="p-4 mb-0 mt-auto" style="color: rgba(125, 122, 122, 0.926); background: snow;">
         <div class="container">
-            <div class="row text-center text-md-start justify-content-center align-items-center  ">
+            <div class="row text-center text-md-start justify-content-center align-items-center">
 
-            <div class="col-3">
-                <h5>sede principal</h5> 
-                <span style="color: gray;">
-                    <i class="fa-solid fa-location-dot"></i> Av. larco 1234, Miraflores, Lima
-                </span>
+                <div class="col-3">
+                    <h5>sede principal</h5> 
+                    <span style="color: gray;">
+                        <i class="fa-solid fa-location-dot"></i> Av. larco 1234, Miraflores, Lima
+                    </span>
+                </div>
+
+                <div class="col-3">
+                    <h5>teléfono</h5> 
+                    <span style="color: gray;"> 
+                        <i class="fa-solid fa-phone"></i> +51 123 456 789
+                    </span>
+                </div>
+
+                <div class="col-3">
+                    <h5>correo eléctronico</h5> 
+                    <span style="color: gray">
+                        <i class="fa-solid fa-envelope"></i> forjagym@gmail.com
+                    </span>
+                </div>
+
+                <div class="col-3"> 
+                    <h5>instagram</h5>
+                    <span style="color:gray">
+                        <i class="fa-brands fa-instagram"></i> ForjaGym.pe
+                    </span>
+                </div>
+
             </div>
-
-            <div class="col-3">
-                <h5>teléfono</h5> 
-                <span style="color: gray;"> 
-                    <i class="fa-solid fa-phone"></i> +51 123 456 789
-                </span>
-            </div>
-
-
-            <div class="col-3">
-                <h5>correo eléctronico</h5> 
-                <span  style="color: gray" >
-                    <i class="fa-solid fa-envelope" ></i> forjagym@gmail.com
-                </span>
-            </div>
-
-            <div class="col-3"> 
-                <h5>instagram</h5>
-                <span style="color:gray">
-                    <i class="fa-brands fa-instagram"></i> ForjaGym.pe
-                </span>
-            </div>
-
-
+        </div>
     </footer>
+
 </body>
 </html>

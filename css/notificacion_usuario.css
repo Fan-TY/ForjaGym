@@ -1,0 +1,187 @@
+
+/* ===========================
+MAIN / FONDO GENERAL
+=========================== */
+main {
+    background:
+        radial-gradient(circle at 10% 100%, rgba(37, 99, 235, 0.18), transparent 40%),
+        linear-gradient(180deg, #05070d 0%, #0b1220 100%);
+    min-height: 100vh;
+    padding: 3rem 8vw 4rem;
+}
+
+/* ===========================
+FILTROS SUPERIORES
+=========================== */
+.filtro {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.filtro button {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.04);
+    color: #9aa4b5;
+    font-weight: 600;
+    padding: 0.65rem 1.6rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filtro button:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #f5f7fa;
+}
+
+.filtro button.activo {
+    background: linear-gradient(135deg, #60a5fa, #2f6ff2);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 0 18px rgba(59, 130, 246, 0.35);
+}
+
+/* ===========================
+LISTA DE NOTIFICACIONES
+=========================== */
+.notificaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.notificacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(18, 24, 38, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 1.6rem 2rem;
+    backdrop-filter: blur(6px);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notificacion:hover {
+    border-color: rgba(96, 165, 250, 0.4);
+}
+
+.notificacion.destacada {
+    border: 1.5px solid #2f6ff2;
+    box-shadow: 0 0 24px rgba(59, 130, 246, 0.55);
+}
+
+.notificacion .detalle {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.notificacion h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #f5f7fa;
+    margin-bottom: 0.35rem;
+}
+
+.notificacion p {
+    font-size: 0.95rem;
+    color: #9aa4b5;
+    margin: 0;
+}
+
+.notificacion .tiempo {
+    font-size: 0.9rem;
+    color: #7db6ff;
+    white-space: nowrap;
+    align-self: flex-start;
+}
+
+/* Checkbox cuadrado estilo diseño */
+.checkbox {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    border: 2px solid #60a5fa;
+    border-radius: 7px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 0.15rem;
+    transition: background-color 0.2s ease;
+}
+
+.checkbox:hover {
+    background-color: rgba(96, 165, 250, 0.15);
+}
+
+.checkbox.marcado {
+    background-color: #2f6ff2;
+    border-color: #2f6ff2;
+}
+
+/* ===========================
+BLOQUE DE FRECUENCIA
+=========================== */
+.configuracion-frecuencia {
+    background-color: rgba(18, 24, 38, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 1.8rem 2rem;
+    margin-top: 1rem;
+}
+
+.configuracion-frecuencia p {
+    color: #f5f7fa;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.configuracion-frecuencia .opciones {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.configuracion-frecuencia .opcion {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.04);
+    color: #9aa4b5;
+    font-weight: 600;
+    padding: 0.9rem 1.8rem;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.configuracion-frecuencia .opcion:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #f5f7fa;
+}
+
+.configuracion-frecuencia .opcion.activa {
+    background: linear-gradient(135deg, #60a5fa, #2f6ff2);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 0 18px rgba(59, 130, 246, 0.35);
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+    main {
+        padding: 2rem 5vw 3rem;
+    }
+
+    .notificacion {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .notificacion .tiempo {
+        align-self: flex-end;
+    }
+}
